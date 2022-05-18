@@ -1,16 +1,16 @@
 import { Button, Typography } from "@mui/material";
 import { FormattedMessage } from "react-intl";
-import "./App.css";
+import "./assets/styles/App.css";
 
 const App = () => {
   return (
-    <div className="App" style={{ backgroundColor: "red" }}>
+    <div className="App">
       <Button variant="contained">Hello World</Button>
-      <Typography variant="h1" component="h2">
+      <Typography variant="body2">
         h1. Heading
-        <FormattedMessage id="IDS_HMS_CMS_DISABLE_NOTE" />
+        <FormattedMessage id="IDS_CHAT_EVALUATE_SERVICE_QUESTION_2" />
       </Typography>
-      <Typography variant="h1" component="h2">
+      <Typography variant="body2">
         <FormattedMessage id="IDS_CHAT_EVALUATE_SERVICE_QUESTION_2" />
       </Typography>
     </div>
