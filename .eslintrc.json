@@ -37,7 +37,7 @@
     "import/prefer-default-export": 0,
     "react/state-in-constructor": "off",
     "react/jsx-no-duplicate-props": "off",
-    "react/prop-types": [0],
+    "react/prop-types": [2],
     "react/jsx-wrap-multilines": "off",
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off",
