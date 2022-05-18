@@ -1,9 +1,9 @@
 import { IntlProvider } from "react-intl";
-import { useTranst } from "../../../hooks";
+import useTranst from "../../../hooks/useTranst";
 
-const LanguagesProvider = () => {
+const LanguagesProvider = (props) => {
   const { message, locale } = useTranst("vi");
-  return <IntlProvider message={message} locale={locale} />;
+  return <IntlProvider {...props} messages={message} locale={locale} />;
 };
 
 LanguagesProvider.propTypes = {};
