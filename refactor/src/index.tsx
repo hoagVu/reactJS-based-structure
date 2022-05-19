@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "assets/styles/index.scss";
+import LanguagesProvider from "utils/intl/components/LanguagesProvider";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -9,7 +10,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <LanguagesProvider>
+      <App />
+    </LanguagesProvider>
   </React.StrictMode>
 );
 
