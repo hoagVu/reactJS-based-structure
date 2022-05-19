@@ -23,6 +23,8 @@
     }
   },
   "rules": {
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
     "no-unused-expressions": "off", // cảnh báo một biểu thức không được sử dụng và ko liên quan đến logic
     "no-unused-vars": 0, // các biến không được sử dụng -  recommened
     "no-constant-condition": 0, //if(true, flase) .... - recommened
@@ -47,6 +49,18 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": [
+          "function-declaration",
+          "function-expression",
+          "arrow-function"
+        ],
+        "unnamedComponents": ["function-expression", "arrow-function"]
+      }
+    ]
   }
 }
