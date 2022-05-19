@@ -1,6 +1,8 @@
+import { ThemeProvider as MuiThemeProvider } from "@material-ui/styles";
+import "assets/styles/index.scss";
+import { MUI_THEME } from "assets/theme/setupTheme";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "assets/styles/index.scss";
 import LanguagesProvider from "utils/intl/components/LanguagesProvider";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -10,9 +12,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <LanguagesProvider>
-      <App />
-    </LanguagesProvider>
+    <MuiThemeProvider theme={MUI_THEME}>
+      <LanguagesProvider>
+        <App />
+      </LanguagesProvider>
+    </MuiThemeProvider>
   </React.StrictMode>
 );
 

@@ -23,6 +23,7 @@
     }
   },
   "rules": {
+    "no-lone-blocks": 0,
     "import/no-named-as-default": 0,
     "import/no-named-as-default-member": 0,
     "no-unused-expressions": "off", // cảnh báo một biểu thức không được sử dụng và ko liên quan đến logic
