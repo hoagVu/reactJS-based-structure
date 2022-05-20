@@ -13,3 +13,12 @@ export const isEmpty = (prop: any) => {
     (prop.constructor === Object && Object.keys(prop).length === 0)
   );
 };
+
+export const isJSONString = (str: string) => {
+  try {
+    JSON.parse(str);
+  } catch (e) {
+    return false;
+  }
+  return true;
+};
