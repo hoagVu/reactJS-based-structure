@@ -1,5 +1,5 @@
 import { ThemeProvider as MuiThemeProvider } from "@material-ui/styles";
-import "assets/styles/index.scss";
+import "assets/styles/global.scss";
 import { MUI_THEME } from "assets/theme/setupTheme";
 import React from "react";
 import ReactDOM from "react-dom/client";
