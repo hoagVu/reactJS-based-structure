@@ -15,7 +15,6 @@ interface IAppProps {}
 
 const App: React.FunctionComponent<IAppProps> = (props) => {
   const classes = useStyles();
-  console.log('test')
   return (
     <div className={classes.root}>
       <img src={logo} alt="logo" style={{ width: 160, height: 160 }} />
