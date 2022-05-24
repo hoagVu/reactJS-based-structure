@@ -3,6 +3,7 @@ import "assets/styles/global.scss";
 import { MUI_THEME } from "assets/theme/setupTheme";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import LanguagesProvider from "utils/intl/components/LanguagesProvider";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -12,11 +13,13 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MuiThemeProvider theme={MUI_THEME}>
-      <LanguagesProvider>
-        <App />
-      </LanguagesProvider>
-    </MuiThemeProvider>
+    <BrowserRouter>
+      <MuiThemeProvider theme={MUI_THEME}>
+        <LanguagesProvider>
+          <App />
+        </LanguagesProvider>
+      </MuiThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
