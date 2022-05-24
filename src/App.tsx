@@ -4,7 +4,6 @@ import MainLayout from "layouts/desktop/MainLayout";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "views/About";
-import Home from "views/Home";
 import NotSupported from "views/NotSupported";
 import logo from "./logo.svg";
 
