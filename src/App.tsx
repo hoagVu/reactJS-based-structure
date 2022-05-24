@@ -4,6 +4,7 @@ import MainLayout from "layouts/desktop/MainLayout";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "views/About";
+import Home from "views/Home";
 import NotSupported from "views/NotSupported";
 import logo from "./logo.svg";
 
@@ -22,7 +23,7 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
       <img src={logo} alt="logo" style={{ width: 160, height: 160 }} />
       <NotSupported />
       <Routes>
-        <Route path="/" element={<MainLayout />} />
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
       </Routes>
     </div>
