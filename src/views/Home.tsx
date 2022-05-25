@@ -1,10 +1,25 @@
 import MainLayout from "layouts/desktop/MainLayout";
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet, useRoutes } from "react-router-dom";
+import About from "./About";
 
 interface IHomeProps {}
 
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
+  const element = useRoutes([
+    // These are the same as the props you provide to <Route>
+    { path: "/", element: <Home /> },
+    // {
+    //   path: "/cryptocurrencies",
+    //   element: <Cryptocurrencies />,
+    //   // Nested routes use a children property
+    //   children: [{ path: ":coinId", element: <CryptoDetails /> }],
+    // },
+    {
+      path: "/about",
+      element: <About />,
+    },
+  ]);
   return (
     <div>
       <main>
@@ -15,6 +30,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <nav>
         <Link to="/about">About</Link>
       </nav>
+      <Outlet />
     </div>
   );
 };
