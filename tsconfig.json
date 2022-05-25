@@ -2,7 +2,7 @@
   "compilerOptions": {
     "sourceMap": false,
     "target": "es6",
-    "lib": ["es6", "es7", "dom", "dom.iterable", "esnext"],
+    "lib": ["es6", "es7", "dom", "dom.iterable", "esnext", "es2019"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
