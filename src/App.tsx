@@ -29,14 +29,6 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
 
   return (
     <>
-      <h1>Auth Example</h1>
-
-      <p>
-        This example demonstrates a simple login flow with three pages: a public
-        page, a protected page, and a login page. In order to see the protected
-        page, you must first login. Pretty standard stuff.
-      </p>
-
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
