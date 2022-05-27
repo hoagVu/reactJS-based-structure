@@ -10,15 +10,13 @@ interface IAppProps {}
 
 const App: React.FunctionComponent<IAppProps> = (props) => {
   return (
-    <>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/protected" element={<About />} />
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/protected" element={<About />} />
+      </Route>
+    </Routes>
   );
 };
 
