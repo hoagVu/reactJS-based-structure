@@ -5,6 +5,7 @@ import Header from "./Header";
 interface IMainLayoutProps {}
 
 const MainLayout: React.FunctionComponent<IMainLayoutProps> = (props) => {
+  console.log("mainLayout");
   return (
     <div>
       <Header />
