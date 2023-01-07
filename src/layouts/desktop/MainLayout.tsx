@@ -9,6 +9,7 @@ const MainLayout: React.FunctionComponent<IMainLayoutProps> = (props) => {
   return (
     <div>
       <Header />
+      自分の記録
       <Footer />
     </div>
   );
