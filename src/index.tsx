@@ -5,17 +5,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import LanguagesProvider from "utils/intl/components/LanguagesProvider";
+import { Provider } from "react-redux";
+import { store } from "utils/redux/store";
 import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <MuiThemeProvider theme={MUI_THEME}>
-        <LanguagesProvider>
-          <App />
-        </LanguagesProvider>
-      </MuiThemeProvider>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <MuiThemeProvider theme={MUI_THEME}>
+          <LanguagesProvider>
+            <App />
+          </LanguagesProvider>
+        </MuiThemeProvider>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

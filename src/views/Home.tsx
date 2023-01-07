@@ -1,4 +1,4 @@
-import MainLayout from "layouts/desktop/MainLayout";
+import MainLayout from "features/desktop/MainLayout";
 import * as React from "react";
 import { Link, Outlet, useRoutes } from "react-router-dom";
 import About from "./About";

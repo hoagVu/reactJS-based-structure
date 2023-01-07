@@ -1,15 +1,20 @@
 import { some } from "utils/helpers";
 import vi from "utils/intl/vi.json";
 import en from "utils/intl/en.json";
+import ja from "utils/intl/ja.json";
+
+const resources = {
+  en: { translation: en },
+  ja: { translation: ja },
+  vi: { translation: vi },
+};
 
 const useTranst = (locale) => {
-  let result: some = { locale };
-  if (locale.startsWith("vi")) {
-    result = { ...result, message: vi };
-  } else {
-    result = { ...result, message: en };
-  }
-  return result;
+  const result: some = { locale };
+  console.log("locale", locale);
+  return resources[`${locale}`]?.translation
+    ? { ...result, message: resources[`${locale}`].translation }
+    : { locale, message: en };
 };
 
 export default useTranst;
