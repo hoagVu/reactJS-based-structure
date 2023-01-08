@@ -7,19 +7,21 @@ import {
   Tooltip,
   XAxis,
 } from "recharts";
-import "../Dashboard.scss";
-import { dataChart } from "../utilts";
+import { some } from "utils/helpers";
+import "../Record.scss";
 
-interface IBodyWeightGraphProps {}
+interface IRecordChartProps {
+  data: some[];
+}
 
-const BodyWeightGraph: React.FC<IBodyWeightGraphProps> = (props) => {
+const RecordChart: React.FC<IRecordChartProps> = ({ data }) => {
   return (
-    <div style={{ width: "100%" }} className="chart-container">
-      <ResponsiveContainer width="100%" height={300}>
+    <div className="record-chart-container">
+      <ResponsiveContainer width="100%" height={200}>
         <LineChart
           width={500}
           height={300}
-          data={dataChart}
+          data={data}
           margin={{
             top: 5,
             right: 30,
@@ -29,9 +31,9 @@ const BodyWeightGraph: React.FC<IBodyWeightGraphProps> = (props) => {
           <CartesianGrid horizontal={false} />
           <XAxis
             dataKey="name"
+            tick={{ fontSize: 12, fill: "#ffffff", fontWeight: 300 }}
             tickLine={false}
             axisLine={false}
-            tick={{ fontSize: 12, fill: "#ffffff", fontWeight: 300 }}
           />
           <Tooltip />
           <Line
@@ -55,4 +57,4 @@ const BodyWeightGraph: React.FC<IBodyWeightGraphProps> = (props) => {
   );
 };
 
-export default BodyWeightGraph;
+export default RecordChart;

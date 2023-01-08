@@ -49,7 +49,10 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
       </div>
 
       <div className="info-container">
-        <Button variant="text" className="info-header">
+        <Button
+          variant="text"
+          className="info-header"
+          onClick={() => navigate(routes.RECORD)}>
           <IconMemo />
           <Typography component="span" className="header-title">
             <FormattedMessage id="IDS_PROFLIE" />

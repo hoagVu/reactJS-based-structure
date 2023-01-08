@@ -1,12 +1,12 @@
 import { Button, CircularProgress, Grid, Typography } from "@mui/material";
 import { IconKnife } from "assets/icons/iconsDefined";
+import recordLogo3 from "assets/images/d01.jpg";
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
 import { some } from "utils/helpers";
-import "./Dashboard.scss";
-import recordLogo3 from "assets/images/d01.jpg";
-import { dataRecordsFake, RECORD_LIST } from "./utilts";
 import BodyWeightGraph from "./components/BodyWeightGraph";
+import "./Dashboard.scss";
+import { dataRecordsFake, RECORD_LIST } from "./utilts";
 
 interface IDashboardProps {}
 
@@ -33,21 +33,10 @@ const Dashboard: React.FunctionComponent<IDashboardProps> = (props) => {
                   objectFit: "cover",
                   width: "100%",
                   height: 316,
-                  filter: "contrast(120%)",
+                  filter: "contrast(100%)",
                   opacity: 1,
-                  mixBlendMode: "soft-light",
                   background:
                     "linear-gradient(225deg, #ffcc21 0%, #ff963c 100%)",
-                }}
-              />
-              <div
-                style={{
-                  width: "100%",
-                  height: 316,
-                  bottom: 0,
-                  position: "absolute",
-                  background:
-                    "linear-gradient(rgba(29, 31, 32, 0) 0%, rgb(40 39 37) 100%)",
                 }}
               />
               <div

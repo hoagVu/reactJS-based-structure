@@ -7,15 +7,16 @@ import recordLogo3 from "assets/images/MyRecommend-1.jpg";
 import recordLogo4 from "assets/images/MyRecommend-2.jpg";
 import recordLogo5 from "assets/images/MyRecommend-3.jpg";
 
+import { dataChart } from "features/desktop/dashboard/utilts";
 import { BUTTON_TYPE_LISTS, dataDiaryFake, dataDiaryFake1 } from "./utils";
+import RecordChart from "./components/RecordChart";
 
 interface IRecordProps {}
 
 const Record: React.FunctionComponent<IRecordProps> = (props) => {
-  const [buttonActive, setButtonActive] = React.useState<some>({
-    id: 4,
-    name: "年",
-  });
+  const [buttonActive, setButtonActive] = React.useState<some>(
+    BUTTON_TYPE_LISTS[0]
+  );
 
   React.useEffect(() => {
     document.title = "My Record";
@@ -241,15 +242,7 @@ const Record: React.FunctionComponent<IRecordProps> = (props) => {
             2021.05.21
           </div>
         </div>
-        <div
-          style={{
-            width: "100%",
-            height: 240,
-            overflow: "auto",
-            marginTop: 0,
-          }}>
-          asdsdas
-        </div>
+        <RecordChart data={buttonActive.dataChart} />
         <div style={{ display: "flex", width: "100%" }}>
           {BUTTON_TYPE_LISTS.map((elm, index) => {
             return (

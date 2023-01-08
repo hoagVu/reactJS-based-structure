@@ -1,5 +1,7 @@
+import { Button } from "@mui/material";
 import * as React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { routes } from "utils/routes";
 import "./LoginPage.scss";
 
 interface ILoginPageProps {}
@@ -12,38 +14,21 @@ interface AuthContextType {
 
 const AuthContext = React.createContext<AuthContextType>(null!);
 
-function useAuth() {
-  return React.useContext(AuthContext);
-}
-
 const LoginPage: React.FunctionComponent<ILoginPageProps> = (props) => {
   const navigate = useNavigate();
-  const location: any = useLocation();
-  const auth = useAuth();
 
-  const from = location?.state?.from?.pathname
-    ? location?.state?.from?.pathname
-    : "/";
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-    const username = formData.get("username") as string;
-
-    auth.signin(username, () => {
-      navigate(from, { replace: true });
-    });
+  const handleSubmit = () => {
+    navigate(routes.DASHBOARD);
+    localStorage.setItem("LOGIN_ALLOWED", "true");
   };
 
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit}>
-        <p>
-          Username: <input name="username" type="text" />
-        </p>
-        <button type="submit">Login</button>
-      </form>
+      <div className="action-button-container">
+        <Button variant="text" className="action-button" onClick={handleSubmit}>
+          LOGIN
+        </Button>
+      </div>
     </div>
   );
 };

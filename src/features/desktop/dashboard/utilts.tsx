@@ -81,3 +81,56 @@ export const dataRecordsFake: some[] = [
     time: "05.20",
   },
 ];
+
+export const dataChart = [
+  {
+    name: "6月",
+    data1: 9500,
+    data2: 9500,
+  },
+  {
+    name: "7月",
+    data1: 8000,
+    data2: 8800,
+  },
+  {
+    name: "8月",
+    data1: 7500,
+    data2: 6000,
+  },
+  {
+    name: "9月",
+    data1: 5800,
+    data2: 7000,
+  },
+  {
+    name: "10月",
+    data1: 5800,
+    data2: 6500,
+  },
+  {
+    name: "1月",
+    data1: 4500,
+    data2: 5500,
+  },
+  {
+    name: "2月",
+    data1: 5500,
+    data2: 7200,
+  },
+  {
+    name: "3月",
+    data1: 3000,
+    data2: 5200,
+  },
+  {
+    name: "4月",
+    data1: 2000,
+    data2: 4800,
+  },
+  {
+    name: "5月",
+    data1: 0,
+    data2: 5500,
+  },
+];

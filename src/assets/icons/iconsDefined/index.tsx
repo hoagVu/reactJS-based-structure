@@ -7,3 +7,4 @@ export { ReactComponent as IconChallenge } from "../ic_challenge.svg";
 export { ReactComponent as IconInfo } from "../ic_info.svg";
 export { ReactComponent as IconMenu } from "../ic_menu.svg";
 export { ReactComponent as IconCount } from "../ic_count.svg";
+export { ReactComponent as IconScroll } from "../ic_scroll.svg";

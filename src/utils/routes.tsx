@@ -1,7 +1,6 @@
 export const routes = {
   LOGIN: "/login",
-  DASHBOARD: "/",
-  TOP_PAGE: "/top-page",
+  DASHBOARD: "/top-page",
   RECORD: "/my-record",
   COLUMNPAGE: "/column-page",
 };

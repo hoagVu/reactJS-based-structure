@@ -1,7 +1,26 @@
 .login-container {
   width: 100%;
   height: 100%;
+  min-height: 780px;
   display: flex;
   justify-content: center;
   align-items: center;
+  .action-button-container {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    .action-button {
+      background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+      width: 296px;
+      height: 56px;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
 }
