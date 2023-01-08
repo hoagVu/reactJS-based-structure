@@ -1,0 +1,28 @@
+.footer-container {
+  width: 100%;
+  height: 128px;
+  background: #414141;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.160784);
+  padding: 56px 160px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.033px;
+  display: flex;
+  justify-content: space-between;
+  .footer-item-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    .footer-item {
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+}

@@ -11,7 +11,6 @@ const resources = {
 
 const useTranst = (locale) => {
   const result: some = { locale };
-  console.log("locale", locale);
   return resources[`${locale}`]?.translation
     ? { ...result, message: resources[`${locale}`].translation }
     : { locale, message: en };
