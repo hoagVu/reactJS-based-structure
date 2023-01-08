@@ -42,8 +42,13 @@
       position: relative;
       .info-badger-noti {
         position: absolute;
-        top: -2px;
+        top: -18px;
         right: -6px;
+      }
+      .info-noti-icon {
+        position: absolute;
+        top: -15px;
+        right: 0px;
       }
     }
   }

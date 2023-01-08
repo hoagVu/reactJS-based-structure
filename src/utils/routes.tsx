@@ -3,4 +3,5 @@ export const routes = {
   DASHBOARD: "/",
   TOP_PAGE: "/top-page",
   RECORD: "/my-record",
+  COLUMNPAGE: "/column-page",
 };

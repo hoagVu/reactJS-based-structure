@@ -1,0 +1,121 @@
+.record-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 160px 64px;
+  .action-button-container {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .action-button {
+      background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+      width: 296px;
+      height: 56px;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .record-diary-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 950px;
+    justify-content: space-between;
+    .record-diary-exr-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.125px;
+      color: #ffcc21;
+    }
+    .record-diary-exr-content {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .record-diary-item {
+      width: 234px;
+      height: 234px;
+      padding: 6px;
+      position: relative;
+      text-transform: none;
+    }
+    .record-diary-info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.09px;
+      color: #414141;
+    }
+    .record-diary-info-note {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+      color: #414141;
+    }
+
+    .record-diary-info-note-content {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      -webkit-box-orient: vertical;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+      color: #414141;
+    }
+  }
+  .record-diary-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.11px;
+    color: #414141;
+    margin-bottom: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4px;
+  }
+  .record-diary-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 950px;
+    height: 264px;
+    background: #414141;
+    padding: 16px 24px;
+    margin-bottom: 56px;
+    border-radius: 0px;
+  }
+  .record-diary-chart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 950px;
+    height: 304px;
+    background: #414141;
+    padding: 16px 24px;
+    margin-bottom: 56px;
+    border-radius: 0px;
+  }
+}

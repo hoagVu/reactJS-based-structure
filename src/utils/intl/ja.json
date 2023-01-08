@@ -1,5 +1,13 @@
 {
   "IDS_PROFLIE": "自分の記録",
   "IDS_CHALLENGE": "チャレンジ",
-  "IDS_NOTE": "お知らせ"
+  "IDS_NOTE": "お知らせ",
+  "IDS_SEE_MORE_RECORDS": "記録をもっと見る",
+  "IDS_SEE_MORE_DIARIES": "自分の日記をもっと見る",
+  "IDS_DIARY": "MY DIARY",
+  "IDS_BODY_RECORD": "BODY RECORD",
+  "IDS_MY_BODY_RECORD": "自分のカラダの記録",
+  "IDS_BODY_EXERCISE": "MY EXERCISE",
+  "IDS_MY_BODY_EXERCISE": "自分の運動の記録",
+  "IDS_DIARY_RECORD": "自分の日記"
 }

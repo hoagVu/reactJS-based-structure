@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Button, Popover, Typography } from "@mui/material";
 import {
   IconChallenge,
@@ -9,12 +11,16 @@ import {
 } from "assets/icons/iconsDefined";
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
+import { useNavigate } from "react-router-dom";
 import { some } from "utils/helpers";
+import { routes } from "utils/routes";
 import "./Header.scss";
 
 interface IHeaderProps {}
 
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+  const navigate = useNavigate();
+
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
     null
   );
@@ -38,7 +44,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
   return (
     <div className="header-container">
-      <div className="badge-header">
+      <div className="badge-header" onClick={() => navigate(routes.DASHBOARD)}>
         <IconLogo />
       </div>
 
@@ -56,8 +62,9 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
           </Typography>
         </Button>
         <Button variant="text" className="info-header">
+          <IconInfo />
+
           <div className="info-badger-noti-container">
-            <IconInfo />
             <div className="info-badger-noti">
               <IconCount />
             </div>

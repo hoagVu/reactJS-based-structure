@@ -1,0 +1,134 @@
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 160px 64px;
+  .action-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .action-button {
+      background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+      width: 296px;
+      height: 56px;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .page-diary-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 950px;
+    margin-bottom: 56px;
+    justify-content: space-between;
+    .page-diary-exr-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.125px;
+      color: #ffcc21;
+    }
+    .page-diary-exr-content {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .page-diary-item {
+      width: 216px;
+      height: 144px;
+      margin-right: 16px;
+    }
+    .page-diary-info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.09px;
+      color: #414141;
+    }
+    .page-diary-info-note {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+      color: #414141;
+    }
+
+    .page-diary-info-note-content {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      -webkit-box-orient: vertical;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+      color: #414141;
+    }
+  }
+  .page-record-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+    width: 100%;
+    max-width: 950px;
+    justify-content: space-between;
+    .page-record-item {
+      width: 234px;
+      height: 208;
+      padding: 4px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+      border-radius: 0px;
+    }
+    .page-record-info {
+      width: 144px;
+      height: 34px;
+      background: #ffcc21;
+      color: #ffffff;
+      position: absolute;
+      bottom: 63px;
+      left: 4px;
+      padding: 7px 8px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+    }
+    .page-record-info-content {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      -webkit-box-orient: vertical;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+      color: #414141;
+    }
+  }
+}

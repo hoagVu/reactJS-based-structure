@@ -1,0 +1,125 @@
+.dashboard-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .action-button-container {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    .action-button {
+      background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+      width: 296px;
+      height: 56px;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .dashboard-record-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    width: 100%;
+    max-width: 950px;
+    justify-content: space-between;
+    .dashboard-record-item {
+      width: 234px;
+      height: 234px;
+      padding: 2px 0px;
+      position: relative;
+      text-transform: none;
+    }
+    .dashboard-record-info {
+      width: 120px;
+      height: 32px;
+      background: #ffcc21;
+      color: #ffffff;
+      position: absolute;
+      bottom: 2px;
+      left: 0px;
+      padding: 7px 8px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: left;
+    }
+  }
+  .dashboard-record-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    padding: 0px 80px;
+    color: #ffffff;
+
+    .dashboard-record-button-item {
+      position: relative;
+      overflow: hidden;
+      margin: 2em auto;
+      width: 8.5em;
+      height: 8.5em;
+      transform: rotate(-30deg) skewX(30deg) scaleY(0.866);
+      cursor: pointer;
+    }
+    .dashboard-record-button-item:before {
+      position: absolute;
+      right: 6.7%;
+      bottom: 0;
+      left: 6.7%;
+      top: 0;
+      transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+      background: linear-gradient(#ff963c, #ffcc21);
+      color: white;
+      text-align: center;
+      text-shadow: 0 0 0.5em black;
+      content: "";
+      cursor: pointer;
+    }
+
+    .dashboard-record-button-info {
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .dashboard-diet-container {
+    max-height: 316px;
+    width: 100%;
+    height: 100%;
+
+    .dashboard-diet-text {
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-shadow: 0px 0px 6px #fca500;
+      margin-right: 4px;
+      margin-top: 6px;
+    }
+    .dashboard-diet-percent {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0px 0px 6px #fca500;
+    }
+  }
+}
+
+.chart-container {
+  width: 100%;
+  background: #2e2e2e;
+  height: 316px;
+}
